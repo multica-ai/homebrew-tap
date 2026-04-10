@@ -5,21 +5,21 @@
 class Multica < Formula
   desc "Multica CLI — local agent runtime and management tool for the Multica platform"
   homepage "https://github.com/multica-ai/multica"
-  version "0.1.21"
+  version "0.1.22"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/multica-ai/multica/releases/download/v0.1.21/multica_darwin_amd64.tar.gz"
-      sha256 "feae43c716299ee2b103cf89ce3895b6afb4b46a9a00d6458f607028bf1c6c1d"
+      url "https://github.com/multica-ai/multica/releases/download/v0.1.22/multica_darwin_amd64.tar.gz"
+      sha256 "3c464940d28d778919351b5d07b87ac19fe22c1f5665a15b9683b7c4fee5724e"
 
       define_method(:install) do
         bin.install "multica"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/multica-ai/multica/releases/download/v0.1.21/multica_darwin_arm64.tar.gz"
-      sha256 "a0df2ce9f24930a3fa7b6593e8190aa41c04594ff984347d258c04bd80420b07"
+      url "https://github.com/multica-ai/multica/releases/download/v0.1.22/multica_darwin_arm64.tar.gz"
+      sha256 "85c844d0d45a99611ba1527f72e5432643a5d08ba2e616d773910ced06d1294e"
 
       define_method(:install) do
         bin.install "multica"
@@ -29,15 +29,15 @@ class Multica < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/multica-ai/multica/releases/download/v0.1.21/multica_linux_amd64.tar.gz"
-      sha256 "77ecf412508857e22957702666d0c270ae7fbfd9006e8bda180025a8db375a2e"
+      url "https://github.com/multica-ai/multica/releases/download/v0.1.22/multica_linux_amd64.tar.gz"
+      sha256 "b137f4e323b0e725c746c9bb5d574a03fa75a7c56372ceec538b92bb0c5ed118"
       define_method(:install) do
         bin.install "multica"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/multica-ai/multica/releases/download/v0.1.21/multica_linux_arm64.tar.gz"
-      sha256 "43965bd3f0a753a3eab84360dacbff0c3244d968cac297c9b5137dcc09fe1d7f"
+      url "https://github.com/multica-ai/multica/releases/download/v0.1.22/multica_linux_arm64.tar.gz"
+      sha256 "119084510281aaecb89838edac3125a7e0ea9c3a12690ddd7e3f6cb29ff2c0df"
       define_method(:install) do
         bin.install "multica"
       end
