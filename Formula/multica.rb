@@ -10,7 +10,7 @@ class Multica < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/multica-ai/multica/releases/download/v0.4.42/multica-cli-0.4.42-darwin-amd64.tar.gz"
-      sha256 "338b0134806124b57fbf9da4d50a8c526ba83b59cfca24260bef296785d731d9"
+      sha256 "cb43c7aa6cb0c226174de96c21ed701552cd81857cb2473aff143019f6da6c95"
 
       define_method(:install) do
         bin.install "multica"
@@ -18,7 +18,7 @@ class Multica < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/multica-ai/multica/releases/download/v0.4.42/multica-cli-0.4.42-darwin-arm64.tar.gz"
-      sha256 "543ae7233a33cf8d8eb2619f862fe812a35d07ed18d2b6f9d714233effc652db"
+      sha256 "a3bb48baeeb757361686978210e6195aaf50bc69edf83bf3b9c52ca3efc12e41"
 
       define_method(:install) do
         bin.install "multica"
@@ -29,14 +29,14 @@ class Multica < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/multica-ai/multica/releases/download/v0.4.42/multica-cli-0.4.42-linux-amd64.tar.gz"
-      sha256 "e5d8809354e52e866d6c031b32e58122a191366f04e80c030d26791d02bedea2"
+      sha256 "94ff80e29e4b9a66a25e959fa239250bd00d202f9992bad0bb9f70b46ddfffe6"
       define_method(:install) do
         bin.install "multica"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/multica-ai/multica/releases/download/v0.4.42/multica-cli-0.4.42-linux-arm64.tar.gz"
-      sha256 "f7f433fcffd9bcd02c546dc52dfa76ccf67962f2e77f1025876eec841d5332d7"
+      sha256 "0a1056c997aac6b0cf3a2fa56bd0ddd16f01e69cfcdc2938aa20473da4efd9c3"
       define_method(:install) do
         bin.install "multica"
       end
